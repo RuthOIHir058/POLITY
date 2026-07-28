@@ -1,0 +1,53 @@
+name: Feature or research proposal
+description: Propose a scoped capability or model amendment.
+title: "proposal: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Scientific changes require an explicit equation, timing, audit, test, and calibration plan. Roadmap references are not automatic approval.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Research or user problem
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: specification
+    attributes:
+      label: Specification impact
+      description: Identify existing sections and any required versioned amendment.
+    validations:
+      required: true
+  - type: textarea
+    id: determinism
+    attributes:
+      label: Determinism, state, and audit design
+      description: Explain new state variables, annual timing, randomness, and named audit causes.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Test and calibration plan
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: I understand equations cannot be replaced by undocumented heuristics.
+          required: true
+        - label: I will report failed validation honestly.
+          required: true
+        - label: I will not include restricted data or credentials.
+          required: true

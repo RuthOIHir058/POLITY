@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use POLITY in research, cite the tagged release and state the policy, country baseline, database snapshot, and verification limitations."
+title: "POLITY Engine V1"
+type: software
+version: 1.0.0
+date-released: 2026-07-28
+authors:
+  - name: "RuthOlHir058"
+  - name: "POLITY contributors"
+repository-code: "https://github.com/RuthOlHir058/POLITY"
+url: "https://github.com/RuthOlHir058/POLITY"
+abstract: >-
+  A deterministic and explainable country-policy simulation engine implementing
+  a 24-phase annual update sequence across demographics, governance,
+  macroeconomics, public finance, political stability, and societal outcomes.
+keywords:
+  - political economy
+  - public policy
+  - deterministic simulation
+  - development economics
+  - explainable modeling
+preferred-citation:
+  type: software
+  title: "POLITY Engine V1"
+  version: 1.0.0
+  year: 2026
+  authors:
+    - name: "RuthOlHir058"
+    - name: "POLITY contributors"
+  repository-code: "https://github.com/RuthOlHir058/POLITY"

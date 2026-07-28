@@ -1,0 +1,51 @@
+name: Scientific or specification change
+description: Propose an equation, coefficient, state, timing, or calibration change.
+title: "science: "
+labels: ["scientific-change"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        V1 equations are specification-controlled. A better-looking trajectory is
+        not sufficient justification.
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Mechanism and current specification
+      description: Cite the exact section, equation, constant, or state dependency.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and research rationale
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed equation or architecture change
+    validations:
+      required: true
+  - type: textarea
+    id: units
+    attributes:
+      label: Units, state ownership, and annual sequencing
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and calibration plan
+      description: Explain train/test separation, metrics, and how failures will be reported.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I will not silently tune coefficients or remove failed results.
+          required: true
+        - label: I will update tests, reports, and the changelog.
+          required: true

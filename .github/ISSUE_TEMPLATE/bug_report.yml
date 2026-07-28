@@ -1,0 +1,46 @@
+name: Software bug
+description: Report reproducible incorrect behavior without changing scientific assumptions.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not include credentials, private paths, or sensitive data. Use private
+        security reporting for security issues.
+  - type: input
+    id: version
+    attributes:
+      label: POLITY version or commit
+      placeholder: "v1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version and operating system
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and specification section
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Use non-sensitive inputs and include exact commands.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Tests and validation already run
