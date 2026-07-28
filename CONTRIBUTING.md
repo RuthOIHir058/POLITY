@@ -11,9 +11,9 @@ Read:
 - `IMPLEMENTATION_REPORT.md`;
 - `VERIFICATION_REPORT.md`;
 - `SECURITY.md`;
-- `LICENSE_PENDING.md`.
+- `LICENSE`.
 
-No project license has yet been selected. By submitting a contribution, you represent that you have the right to submit it. Do not assume that a future license has already been granted or selected.
+POLITY is released under the MIT License. By submitting a contribution, you agree that your contribution will be licensed under the same MIT License as the project. You represent that you have the legal right to submit your contribution.
 
 ## Development setup
 
