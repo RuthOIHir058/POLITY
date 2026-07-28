@@ -2,7 +2,7 @@
 
 POLITY is a deterministic, explainable country-level political-economy simulation engine. Version 1.0.0 implements the authoritative V1 guidebook as a closed-form annual model with explicit policy transmission, governance filtration, macro-fiscal dynamics, social outcomes, and a causal audit log for every simulated year.
 
-> Release status: the V1 implementation is complete and tested. Historical calibration does not yet meet the guidebook's stated acceptance target; the evidence is reported openly in [VERIFICATION_REPORT.md](VERIFICATION_REPORT.md). No software license has yet been selected. See [LICENSE_PENDING.md](LICENSE_PENDING.md) before reusing or redistributing the code.
+> Release status: the V1 implementation is complete and tested. Historical calibration does not yet meet the guidebook's stated acceptance target; the evidence is reported openly in [VERIFICATION_REPORT.md](VERIFICATION_REPORT.md). POLITY is released under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ![POLITY five-layer architecture](docs/assets/polity_five_layer_architecture.png)
 
@@ -221,7 +221,7 @@ POLITY/
 |-- PUBLISHING.md              # Safe owner-authenticated GitHub commands
 |-- pyproject.toml             # Package metadata and pinned optional profiles
 |-- requirements*.txt          # Reproducible install profiles
-`-- LICENSE_PENDING.md         # Explicit notice: no license selected
+`-- LICENSE                    # MIT License
 ```
 
 ## Testing and release verification
@@ -295,4 +295,8 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Scientifi
 
 ## License
 
-No license has been selected. [LICENSE_PENDING.md](LICENSE_PENDING.md) is not a license grant. Source publication alone does not authorize reuse, modification, or redistribution beyond rights provided by applicable law. Third-party data remains subject to its providers' terms.
+POLITY is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
+
+This license applies to the original source code contained in this repository.
+
+Third-party datasets, source workbooks, and externally obtained data remain subject to their respective providers' licenses, terms of use, and citation requirements, and are **not** relicensed under MIT.
