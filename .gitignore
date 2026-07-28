@@ -1,0 +1,109 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Test, type-check, and notebook artifacts
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# IDE/editor metadata
+.idea/
+.vscode/
+.vs/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs, temporary files, and runtime output
+*.log
+*.pid
+*.seed
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+*.pre_*
+.cache/
+logs/
+results/
+outputs/
+tmp/
+temp/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.netrc
+.pypirc
+.npmrc
+.aws/
+.azure/
+.config/gcloud/
+.ssh/
+.gnupg/
+credentials/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.ovpn
+
+# SQLite transient files and unapproved local databases
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite-journal
+data/database/*
+!data/database/polity.db
+!data/database/SHA256SUMS
+engine/data/*.db
+!engine/data/polity.db
+
+# Downloaded/raw data and regenerated intermediates
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
