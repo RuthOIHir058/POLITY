@@ -1,0 +1,21 @@
+Initialized countries: 122
+Comparable countries: 113
+Countries passing all five ±20% targets: 0
+Closest results:
+  MNG: 4/5; gdp_per_capita=30.9%, inflation=11.1%, unemployment=15.2%, debt_gdp=17.5%, life_expectancy=0.2%
+  NAM: 4/5; gdp_per_capita=11.8%, inflation=86.0%, unemployment=0.0%, debt_gdp=10.7%, life_expectancy=8.8%
+  EST: 3/5; gdp_per_capita=9.0%, inflation=76.0%, unemployment=3.3%, debt_gdp=66.0%, life_expectancy=0.1%
+  PAN: 3/5; gdp_per_capita=43.1%, inflation=103.8%, unemployment=4.1%, debt_gdp=18.3%, life_expectancy=0.9%
+  RWA: 3/5; gdp_per_capita=4.6%, inflation=145.7%, unemployment=27.2%, debt_gdp=19.8%, life_expectancy=4.3%
+  DEU: 3/5; gdp_per_capita=13.2%, inflation=148.2%, unemployment=46.4%, debt_gdp=13.3%, life_expectancy=2.2%
+  ARE: 3/5; gdp_per_capita=113.3%, inflation=5.9%, unemployment=7.5%, debt_gdp=100.0%, life_expectancy=0.8%
+  CAN: 3/5; gdp_per_capita=16.0%, inflation=102.1%, unemployment=14.9%, debt_gdp=100.7%, life_expectancy=1.8%
+  SVK: 3/5; gdp_per_capita=8.8%, inflation=107.8%, unemployment=117.7%, debt_gdp=12.6%, life_expectancy=0.0%
+  POL: 3/5; gdp_per_capita=6.8%, inflation=54.1%, unemployment=219.6%, debt_gdp=0.4%, life_expectancy=1.2%
+Kenya proxy:
+  gdp_per_capita: predicted=1129.8317, actual=2132.4345, error=47.0%, pass=False
+  inflation: predicted=-0.0013291366, actual=0.044897885, error=103.0%, pass=False
+  unemployment: predicted=0.24622954, actual=0.05487, error=348.8%, pass=False
+  debt_gdp: predicted=3, actual=0.673, error=345.8%, pass=False
+  life_expectancy: predicted=63.339368, actual=63.834, error=0.8%, pass=True
+Detailed CSV: docs/verification/historical_calibration_proxy.csv

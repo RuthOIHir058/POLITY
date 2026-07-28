@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Scan pristine checkout and reachable history
+        if: matrix.python-version == '3.13'
+        run: python scripts/security_scan.py --root . --history
+
+      - name: Install project and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt
+
+      - name: Run tests with branch coverage
+        run: |
+          python -m coverage run --branch -m pytest
+          python -m coverage report --fail-under=90
+
+      - name: Compile Python sources
+        run: python -m compileall -q engine tools examples scripts main.py
+
+      - name: Validate publication database
+        run: |
+          python -m tools.validation.check_schema
+          python -m tools.validation.check_year_ranges
+          python -m tools.validation.check_loader_contract
+          python -m tools.validation.check_country_coverage
+          python -m tools.validation.check_database_sync
+          python -m tools.validation.check_determinism --years 20
+
+      - name: Run release-wide simulation check
+        if: matrix.python-version == '3.13'
+        run: python scripts/verify_release.py
+
+      - name: Run historical proxy disclosure check
+        if: matrix.python-version == '3.13'
+        run: python -m tools.validation.historical_calibration_proxy
+
+      - name: Clean generated artifacts
+        if: matrix.python-version == '3.13'
+        run: |
+          rm -rf .pytest_cache .coverage htmlcov build dist polity_engine.egg-info
+          find . -type d -name __pycache__ -prune -exec rm -rf {} +
+          find . -type f -name '*.pyc' -delete
+
+      - name: Re-scan publication tree and reachable history
+        if: matrix.python-version == '3.13'
+        run: python scripts/security_scan.py --root . --history

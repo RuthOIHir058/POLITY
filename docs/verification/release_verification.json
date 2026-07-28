@@ -1,0 +1,249 @@
+{
+  "countries_initialized_and_simulated_20_years": 122,
+  "countries_not_initializable_from_required_fields": 174,
+  "country_records": 296,
+  "database": "data/database/polity.db",
+  "determinism": {
+    "country_code": "KEN",
+    "exact_serialized_match": true,
+    "input_state_unchanged": true,
+    "sha256": "991843772a64d354addc4496c5e493c295a946fbf0e9cf45cd912ed6a5008d22",
+    "start_year": 2015,
+    "years": 20
+  },
+  "failure_examples": [
+    {
+      "country_code": "ABW",
+      "error_type": "ValueError",
+      "message": "Cannot initialize ABW 2015: no historical unemployment"
+    },
+    {
+      "country_code": "AFE",
+      "error_type": "ValueError",
+      "message": "Cannot initialize AFE 2015: no historical debt_gdp"
+    },
+    {
+      "country_code": "AFG",
+      "error_type": "ValueError",
+      "message": "Cannot initialize AFG 2015: no historical revenue_gdp"
+    },
+    {
+      "country_code": "AFR",
+      "error_type": "ValueError",
+      "message": "Cannot initialize AFR 2015: no historical gdp_current_usd"
+    },
+    {
+      "country_code": "AFW",
+      "error_type": "ValueError",
+      "message": "Cannot initialize AFW 2015: no historical debt_gdp"
+    },
+    {
+      "country_code": "AND",
+      "error_type": "ValueError",
+      "message": "Cannot initialize AND 2015: no historical inflation"
+    },
+    {
+      "country_code": "ARB",
+      "error_type": "ValueError",
+      "message": "Cannot initialize ARB 2015: no historical inflation"
+    },
+    {
+      "country_code": "ARM",
+      "error_type": "ValueError",
+      "message": "Cannot initialize ARM 2015: no historical revenue_gdp"
+    },
+    {
+      "country_code": "ASM",
+      "error_type": "ValueError",
+      "message": "Cannot initialize ASM 2015: no historical inflation"
+    },
+    {
+      "country_code": "ATG",
+      "error_type": "ValueError",
+      "message": "Cannot initialize ATG 2015: no historical unemployment"
+    },
+    {
+      "country_code": "BDI",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BDI 2015: no historical trade_openness"
+    },
+    {
+      "country_code": "BEA",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BEA 2015: no historical gdp_current_usd"
+    },
+    {
+      "country_code": "BEC",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BEC 2015: no historical gdp_current_usd"
+    },
+    {
+      "country_code": "BHI",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BHI 2015: no historical gdp_current_usd"
+    },
+    {
+      "country_code": "BHR",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BHR 2015: no historical gini"
+    },
+    {
+      "country_code": "BHS",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BHS 2015: no historical gini"
+    },
+    {
+      "country_code": "BLA",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BLA 2015: no historical gdp_current_usd"
+    },
+    {
+      "country_code": "BLR",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BLR 2015: no historical revenue_gdp"
+    },
+    {
+      "country_code": "BLZ",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BLZ 2015: no historical corruption_index"
+    },
+    {
+      "country_code": "BMN",
+      "error_type": "ValueError",
+      "message": "Cannot initialize BMN 2015: no historical gdp_current_usd"
+    }
+  ],
+  "kenya_final_2035": {
+    "audit_entries": 29,
+    "conflict_risk": 0.8349757338238397,
+    "debt_gdp": 3.0,
+    "gdp_per_capita": 477.8463796354439,
+    "inflation": -0.035999902895409656,
+    "life_expectancy": 63.37440850100994,
+    "unemployment": 0.4
+  },
+  "successful_country_codes": [
+    "AGO",
+    "ALB",
+    "ARE",
+    "ARG",
+    "AUS",
+    "AUT",
+    "AZE",
+    "BEL",
+    "BEN",
+    "BFA",
+    "BGD",
+    "BGR",
+    "BIH",
+    "BOL",
+    "BRA",
+    "BTN",
+    "CAF",
+    "CAN",
+    "CHE",
+    "CHL",
+    "CHN",
+    "CIV",
+    "COD",
+    "COG",
+    "COL",
+    "COM",
+    "CPV",
+    "CRI",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DJI",
+    "DNK",
+    "DOM",
+    "DZA",
+    "ECU",
+    "ESP",
+    "EST",
+    "ETH",
+    "FIN",
+    "FRA",
+    "GAB",
+    "GBR",
+    "GEO",
+    "GHA",
+    "GIN",
+    "GNB",
+    "GNQ",
+    "GRC",
+    "GTM",
+    "GUY",
+    "HND",
+    "HRV",
+    "HTI",
+    "HUN",
+    "IDN",
+    "IND",
+    "IRL",
+    "IRN",
+    "ISL",
+    "ISR",
+    "ITA",
+    "JOR",
+    "JPN",
+    "KEN",
+    "KGZ",
+    "KOR",
+    "LBN",
+    "LKA",
+    "LSO",
+    "LUX",
+    "LVA",
+    "MAR",
+    "MDA",
+    "MDG",
+    "MDV",
+    "MEX",
+    "MKD",
+    "MNG",
+    "MOZ",
+    "MYS",
+    "NAM",
+    "NER",
+    "NGA",
+    "NIC",
+    "NLD",
+    "NOR",
+    "PAK",
+    "PAN",
+    "PER",
+    "PHL",
+    "PNG",
+    "POL",
+    "PRT",
+    "PRY",
+    "ROU",
+    "RUS",
+    "RWA",
+    "SDN",
+    "SEN",
+    "SLB",
+    "SLV",
+    "SUR",
+    "SVK",
+    "SVN",
+    "SWE",
+    "SWZ",
+    "TCD",
+    "TGO",
+    "THA",
+    "TJK",
+    "TUN",
+    "TUR",
+    "TZA",
+    "UGA",
+    "UKR",
+    "USA",
+    "UZB",
+    "VEN",
+    "VNM",
+    "VUT",
+    "ZAF"
+  ]
+}
