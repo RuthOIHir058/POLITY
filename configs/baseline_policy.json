@@ -1,0 +1,12 @@
+{
+  "tax_rate": 0.40,
+  "total_expenditure_gdp": 0.24,
+  "health_share": 0.15,
+  "education_share": 0.20,
+  "infrastructure_share": 0.20,
+  "social_transfers_share": 0.20,
+  "admin_share": 0.15,
+  "military_share": 0.10,
+  "inflation_target": 0.02,
+  "trade_policy": 0.00
+}

@@ -1,0 +1,3 @@
+"""POLITY deterministic political-economy simulation engine."""
+
+__version__ = "1.0.0"

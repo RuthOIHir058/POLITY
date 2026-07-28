@@ -1,0 +1,34 @@
+include README.md
+include INSTALL.md
+include QUICKSTART.md
+include ARCHITECTURE.md
+include IMPLEMENTATION_REPORT.md
+include VERIFICATION_REPORT.md
+include SECURITY_AUDIT.md
+include SECURITY.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include LICENSE_PENDING.md
+include RELEASE_NOTES_v1.0.0.md
+include PUBLISHING.md
+include CITATION.cff
+include requirements.txt
+include requirements-data.txt
+include requirements-dev.txt
+include .editorconfig
+include .gitattributes
+include .gitignore
+recursive-include configs *.json
+recursive-include data *.md *.db
+include data/database/SHA256SUMS
+recursive-include docs *.md *.png *.sql
+recursive-include docs/verification *.json *.csv *.txt
+recursive-include examples *.py *.md
+recursive-include tests *.py
+recursive-include scripts *.py *.md
+recursive-include tools *.py *.md
+recursive-include engine/data *.db
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude .pytest_cache
+global-exclude .coverage

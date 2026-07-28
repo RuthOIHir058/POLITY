@@ -1,0 +1,2 @@
+# Core engine: no third-party runtime dependencies.
+-e .
