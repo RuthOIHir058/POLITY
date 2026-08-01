@@ -37,7 +37,11 @@ The clean working tree and complete Git history passed the final security scan b
 
 ## License status
 
-No license has been selected. `LICENSE_PENDING.md` is not a license grant. Review it before using or redistributing the source or data.
+POLITY is licensed under the MIT License. See the LICENSE file for the full license text.
+
+This license applies to the original source code contained in this repository.
+
+Third-party datasets, source workbooks, and externally obtained data remain subject to their respective providers' licenses, terms of use, and citation requirements, and are not relicensed under MIT.
 
 ## Upgrade notes
 
